@@ -1,0 +1,34 @@
+<html>
+    <body>
+    <form name="form2">
+      
+        length: <input type="number" name="length">
+        <br>
+        <br>
+        width: <input type="number" name="width">
+        <br>
+        <br>
+        height: <input type="number" name="height">
+        <br>
+        <br>
+        Volume: <input type="number" name="Vol">
+        
+        <input type="button" onclick="fcal()">
+    </form>
+        <script>
+            function fcal()
+            {
+               var l=document.form2.length.value;
+               var w=document.form2.width.value;
+               var h=document.form2.height.value;
+               var V=l*w*h;
+
+               document.form2.Vol.value = V;
+               alert(V);
+               alert("done");
+               
+            }
+        </script>
+        </body>
+        
+</html>
